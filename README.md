@@ -9,3 +9,6 @@
 # 3. - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector; - (void)forwardInvocation:(NSInvocation *)anInvocation; 在第一个方法中reture signal，这样runtime就会产生一个NSInvocation给第二个方法，anInvocation中有target和selector，可以修改，然后让target进行调用，不调用也可以，只是什么都不发生
 
 # 如果以上三次机会都不把握，则会调用- (void)doesNotRecognizeSelector:(SEL)aSelector; 默认的实现是抛出异常
+
+
+TestCR
